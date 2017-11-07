@@ -14,6 +14,7 @@
 		394592531FB152A500E79886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 394592521FB152A500E79886 /* Assets.xcassets */; };
 		394592561FB152A500E79886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394592541FB152A500E79886 /* LaunchScreen.storyboard */; };
 		394592591FB152A500E79886 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 394592581FB152A500E79886 /* main.m */; };
+		394592631FB152D400E79886 /* ComColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 394592621FB152D400E79886 /* ComColorManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		394592551FB152A500E79886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		394592571FB152A500E79886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		394592581FB152A500E79886 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		394592601FB152D400E79886 /* ColorValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorValues.h; sourceTree = "<group>"; };
+		394592611FB152D400E79886 /* ComColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComColorManager.h; sourceTree = "<group>"; };
+		394592621FB152D400E79886 /* ComColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComColorManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		394592451FB152A500E79886 /* ColorManager */ = {
 			isa = PBXGroup;
 			children = (
+				3945925F1FB152D400E79886 /* Color */,
 				394592461FB152A500E79886 /* AppDelegate.h */,
 				394592471FB152A500E79886 /* AppDelegate.m */,
 				394592491FB152A500E79886 /* ViewController.h */,
@@ -72,6 +77,16 @@
 				3945924F1FB152A500E79886 /* ColorManager.xcdatamodeld */,
 			);
 			path = ColorManager;
+			sourceTree = "<group>";
+		};
+		3945925F1FB152D400E79886 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				394592601FB152D400E79886 /* ColorValues.h */,
+				394592611FB152D400E79886 /* ComColorManager.h */,
+				394592621FB152D400E79886 /* ComColorManager.m */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3945924B1FB152A500E79886 /* ViewController.m in Sources */,
+				394592631FB152D400E79886 /* ComColorManager.m in Sources */,
 				394592511FB152A500E79886 /* ColorManager.xcdatamodeld in Sources */,
 				394592591FB152A500E79886 /* main.m in Sources */,
 				394592481FB152A500E79886 /* AppDelegate.m in Sources */,
@@ -284,6 +300,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ColorManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = txx.com.www.ColorManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,6 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ColorManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = txx.com.www.ColorManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
